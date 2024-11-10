@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  hackingtool:
+    image: vgpastor/hackingtool
+    container_name: hackingtool
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/root/hackingtool
+    ports:
+      - 22:22
